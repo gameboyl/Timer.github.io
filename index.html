@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style1.css">
+    <meta name="google-site-verification" content="XvTIZxndm_FxK7rDkvpZt9fzuGj_wKRXrUyUkuMQaAI" />
+</head>
+<body>
+    <!-- <div id="whole"></div> -->
+    <div id="popupCont" style="display:none" onclick="this.style.display = 'none'">
+        <div id="popup" onclick="event.stopPropagation()">
+            <h1>Set Timer</h1>
+            <span><input placeholder="0" id="amount" type="number"> seconds</span>
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+    <div id = "speedCount">
+        <h1 class = "speed">Set speed</h1>
+        <input type="number" id = "inputspeed" placeholder="1000">
+        <br>
+        <br>
+        <b>(miliseconds)</b>
+        <br>
+        <br>
+        <button class = "submitter">Submit</button>
+    </div>
+    <h1 id="counter">0</h1>
+    <div class="btns">
+        <button id="set">Set</button>
+        <button id="run">Run</button>
+        <button id="stop">Pause</button>
+        <button id="reset">Reset</button>
+        <button id = "speedBTN">Set speed</button>
+    </div>
+    <script src="script1.js" defer></script>
+</body>

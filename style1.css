@@ -1,0 +1,161 @@
+body, html {
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+* {
+    font-family: sans-serif;
+}
+body {
+    background-color: black;
+    height: 100000vh;
+    width: 100%;
+}
+
+#counter {
+    color: #fff;
+    font-size: 20vh;
+}
+
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns button {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 3vh;
+    margin: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btns button:hover {
+    background: #fff !important;
+    color: #000;
+}
+
+#reset {
+    background: #f00;
+}
+
+#run {
+    background: #0f0;
+}
+
+#stop {
+    background: #00f;
+}
+
+#set {
+    background: #f0f;
+}
+
+#popupCont {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #000A;
+}
+
+#popup {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#popup * {
+    margin: 10px;
+}
+
+#popup input {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    outline: none;
+}
+
+#submit {
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 2vh;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background: #fff;
+    color: #000;
+}
+#speedCount {
+    position: relative;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 9px;
+    width: 35%;
+    height: 30vh;
+    text-align: center;
+    top: 227px;
+    display: none;
+}
+#inputspeed {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
+.submitter {
+    background-color: black;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+    height: 5vh;
+    width: 15%;
+    border-radius: 9px;
+}
+.submitter:hover {
+    color: black;
+    background-color: white;
+}
+#speedBTN {
+    background-color: purple;
+}
+.down {
+    position: relative;
+    bottom: 100px !important;
+}
+@media (max-width: 1050px) {
+    #speedCount {
+        position: relative;
+        left: 30px;
+        width: 300px;
+        bottom: 700px;
+    }
+    .submitter {
+        bottom: 10px;
+        position: relative;
+        width: 53px;
+    }
+}
